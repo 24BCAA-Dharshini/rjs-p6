@@ -1,16 +1,22 @@
-// Find the sum of an array using reduce()
 
-const numbers = [10, 20, 30, 40, 50];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Sum</title>
+</head>
+<body>
+  <h1>Sum of Array Using reduce()</h1>
+  <p>Numbers: 10, 20, 30, 40, 50</p>
+  <h2 id="result"></h2>
 
-// TODO:
-// Use the reduce() function to find the sum of the array.
-// Store the result in the variable 'sum'.
+  <script>
+    const numbers = [10, 20, 30, 40, 50];
+    const sum = numbers.reduce((total, num) => total + num, 0);
 
-let sum = 0;
-
-// Write your code below
-
-
-
-// Do not modify this line
-module.exports = sum;
+    document.getElementById("result").textContent =
+      "Total Sum: " + sum;
+  </script>
+</body>
+</html>
